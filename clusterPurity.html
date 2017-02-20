@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- COLORS ARE NOT PERFECT YET. TOOLTIP NEEDS WORK-->
+<meta charset="utf-8">
+<head>
+
+<style>
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#chart{
+  text-align: center;
+  width: 60%;
+  height: 700px;
+}
+</style>
+</head>
+<body>
+<input id="click_1" type="radio" name="sel" value="true" checked="true">Length representation</input>
+<input id="click_2" type="radio" name="sel" value="false">Angle representation</input>
+<div id='chart' ></div>
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="clusterpurityChart.js"></script>
+
+<script>
+
+var obj;
+
+d3.json('clusterpurityDataSet.json',function(error,data){
+  obj = d3.clusterpuritychart().containerID('chart').noOfCategories(4).fixAngleLayout(true);
+  d3.select('#chart').append('svg').datum(data).call(obj);
+});
+
+d3.select('#click_1').on('click',clickFun);
+d3.select('#click_2').on('click',clickFun);
+
+function clickFun(){
+    obj.change(document.getElementById('click_1').checked);
+}
+
+</script>

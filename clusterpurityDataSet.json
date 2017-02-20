@@ -1,0 +1,251 @@
+[{
+	"values":[
+	{
+		"ele":0,
+		"type":"Vandals"
+	},
+	{
+		"ele":40,
+		"type":"BotScore"
+	},
+	{
+		"ele":80,
+		"type":"Repute"
+	},
+	{
+		"ele":10,
+		"type":"Intensity"
+	}],
+	"total": 150
+		
+},
+{
+	"values":[
+	{
+		"ele":50,
+		"type":"Vandals"
+	},
+	{
+		"ele":0,
+		"type":"BotScore"
+	},
+	{
+		"ele":0,
+		"type":"Repute"
+	},
+	{
+		"ele":10,
+		"type":"Intensity"
+	}],
+
+	"total": 60	
+},
+{
+	"values":[
+	{
+		"ele":25,
+		"type":"Vandals"
+	},
+	{
+		"ele":20,
+		"type":"BotScore"
+	},
+	{
+		"ele":25,
+		"type":"Repute"
+	},
+	{
+		"ele":60,
+		"type":"Intensity"
+	}],
+	"total": 130	
+},
+{
+	"values":[
+	{
+		"ele":25,
+		"type":"Vandals"
+	},
+	{
+		"ele":25,
+		"type":"BotScore"
+	},
+	{
+		"ele":25,
+		"type":"Repute"
+	},
+	{
+		"ele":25,
+		"type":"Intensity"
+	}],
+
+	"total": 100	
+},
+{
+	"values":[
+	{
+		"ele":30,
+		"type":"Vandals"
+	},
+	{
+		"ele":60,
+		"type":"BotScore"
+	},
+	{
+		"ele":20,
+		"type":"Repute"
+	},
+	{
+		"ele":90,
+		"type":"Intensity"
+	}],
+
+	"total": 190	
+},
+{
+	"values":[
+	{
+		"ele":10,
+		"type":"Vandals"
+	},
+	{
+		"ele":20,
+		"type":"BotScore"
+	},
+	{
+		"ele":30,
+		"type":"Repute"
+	},
+	{
+		"ele":40,
+		"type":"Intensity"
+	}],
+
+	"total": 100	
+},
+{
+	"values":[
+	{
+		"ele":20,
+		"type":"Vandals"
+	},
+	{
+		"ele":60,
+		"type":"BotScore"
+	},
+	{
+		"ele":30,
+		"type":"Repute"
+	},
+	{
+		"ele":40,
+		"type":"Intensity"
+	}],
+
+	"total": 150	
+},
+{
+	"values":[
+	{
+		"ele":30,
+		"type":"Vandals"
+	},
+	{
+		"ele":40,
+		"type":"BotScore"
+	},
+	{
+		"ele":50,
+		"type":"Repute"
+	},
+	{
+		"ele":60,
+		"type":"Intensity"
+	}],
+
+	"total": 180	
+},
+{
+	"values":[
+	{
+		"ele":30,
+		"type":"Vandals"
+	},
+	{
+		"ele":40,
+		"type":"BotScore"
+	},
+	{
+		"ele":50,
+		"type":"Repute"
+	},
+	{
+		"ele":60,
+		"type":"Intensity"
+	}],
+
+	"total": 180	
+},
+{
+	"values":[
+	{
+		"ele":30,
+		"type":"Vandals"
+	},
+	{
+		"ele":40,
+		"type":"BotScore"
+	},
+	{
+		"ele":50,
+		"type":"Repute"
+	},
+	{
+		"ele":60,
+		"type":"Intensity"
+	}],
+
+	"total": 180	
+},
+{
+	"values":[
+	{
+		"ele":30,
+		"type":"Vandals"
+	},
+	{
+		"ele":40,
+		"type":"BotScore"
+	},
+	{
+		"ele":50,
+		"type":"Repute"
+	},
+	{
+		"ele":60,
+		"type":"Intensity"
+	}],
+
+	"total": 180	
+},
+{
+	"values":[
+	{
+		"ele":20,
+		"type":"Vandals"
+	},
+	{
+		"ele":30,
+		"type":"BotScore"
+	},
+	{
+		"ele":40,
+		"type":"Repute"
+	},
+	{
+		"ele":60,
+		"type":"Intensity"
+	}],
+
+	"total": 150	
+}]
