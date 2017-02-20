@@ -1,0 +1,95 @@
+UMDWikipedia Dataset
+====================
+
+This dataset contains public edits made by a large sample of registered 
+users on English Wikipedia between January 2013 and July 2014. 
+
+People: Srijan Kumar <srijan@cs.umd.edu>
+	Francesca Spezzano <spezzano@umiacs.umd.edu>
+	V. S. Subrahmanian <vs@cs.umd.edu>
+
+If you have any questions or comments, we would love to hear from you!
+
+If you use this or portion of this dataset, please cite our work:
+   VEWS: A Wikipedia Vandal Early Warning System
+   Srijan Kumar, Francesca Spezzano, V. S. Subrahmanian
+   Proceedings of SIGKDD 2015.
+
+License
+-------
+All data and code are released under CRAPL license.
+The license is present in the included file called CRAPL-LICENSE.txt.
+
+Description
+-----------
+
+Wikipedia has over 35,000,000 articles in over 290 languages [1]. This content 
+is created by over 73,000 active editors from around the globe. However, not all
+the editors are good. Thousands of vandals make unconstructive edits to articles.
+In our work, we propose an early warning system to detect vandals before they can
+harm the community.
+
+This dataset looks at a time period of 19 months from Jan 2013 to July 2014. During
+this time period, almost 1 million users registered on English Wikipedia. Out of these
+17,015 were vandals (users who were blocked by Wikipedia community for vandalism).
+To match the vandals, we randomly collect edits made by an almost equal number of benign 
+users. This dataset contains the edits made by all these editors.
+
+Data Files and Format
+---------------------
+Note: All files are UTF-8 encoded.
+      All csv files are stored as unicodecsv files [2].
+
+users.csv:
+	This file contains the list of all registered users contained in the dataset.
+	The format is:
+	username, userid, blocked_time, blocked_reason, type
+
+	where
+	username is the registered name of the user,	
+	userid is the unique identifier for the user
+	blocked_time is the time when the user was blocked by the administrators,
+	blocked_reason is the reason given by administrators for blocking the user,
+	and type indicates whether the user is "benign" or "vandal"
+
+pages.csv:
+	This file contains information about the pages that are edited by users
+	in the dataset. The format of the file is:
+	pagetitle,pageid,pagecategories
+	
+	where
+	pagetitle is the title of the page
+	pageid is the unique identifier of the page
+	pagecategories is the Wikipedia Categories assigned to the page
+
+benign_<year>_<month>.csv
+	These files contain the edits made by benign users registered in the particular 
+	year and month. The edits by each user are present in consecutive lines, separated
+	from the next user by an empty line. For each user, the edits are sorted 
+	chronologically, earliest edit first.
+	
+	The format of the file is
+	username,revid,revtime,pagetitle,isReverted,revertTime,cluebotRevert,stiki_score,stiki_REP_USER
+	
+	where
+	username is the unique identifier of the user
+	revid is the id of the revision
+	revtime is the time the revision is made
+	pagetitle is the title of the page edited
+	isReverted indicates whether the revision is reverted by other user/bot in future
+	revertTime is the time the revision is reverted
+	cluebotRevert indicates whether ClueBot NG reverts the edit
+	stiki_score is the score given by STiki to the revision
+	stiki_REP_USER is the User Reputation score given by STiki to the user after the revision is made
+
+vandal_<year>_<month>.csv:
+	These files contain the edits made by users blocked by Wikipedia administrators in <year> and <momth>.
+	The format is the same as described for benign_<year>_<month>.csv files.
+
+The list of all reverts are available at:
+    http://datahub.io/dataset/english-wikipedia-reverts
+
+References
+----------
+[1] https://en.wikipedia.org/wiki/Wikipedia:About
+[2] https://pypi.python.org/pypi/unicodecsv/0.9.0
