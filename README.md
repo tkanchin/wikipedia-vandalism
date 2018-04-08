@@ -35,4 +35,4 @@ To generate data for TreeMap.html
 * Excel was used to normalize the data and process the data for clusterPurity.html
 
 ### Known Issues
-The code works well only on Mozilla Browser (It may not work so well on Google Chrome)
+The code works well only on Mozilla Browser (It may not work so well on Google Chrome.)
